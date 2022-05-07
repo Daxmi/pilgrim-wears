@@ -96,7 +96,7 @@ const Login = () => {
     // const res = await axios.get("http://localhost:5000/auth/google")
     // // window.location.href = `${res.request.responseURL}`;
     // console.log(res);
-    window.open("http://localhost:5000/auth/google", "_self");
+    window.open("https://pilgrim-wears.herokuapp.com/auth/google", "_self");
   }
 
   return (
