@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Product from "./pages/Product";
 import Home from "./pages/Home";
 import ProductList from "./pages/ProductList";
@@ -12,7 +12,8 @@ import axios from "axios";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 const App = () => {
-  const [user, setUser] = useState(null)
+  // const [user, setUser] = useState(null)
+  const user = null;
   useEffect(() => {
     const getUser = async () => {
       // fetch("http://localhost:5000/auth/login/success", {
