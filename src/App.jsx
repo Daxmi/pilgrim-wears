@@ -35,7 +35,8 @@ const App = () => {
       //     console.log(err);
       //   });
       const res = await axios.get("https://pilgrim-wears.herokuapp.com/auth/login/success", { withCredentials: true });
-      setUser(res.data.user)
+      console.log(res);
+      // setUser(res.data.user)
     };
     getUser();
   }, []);
