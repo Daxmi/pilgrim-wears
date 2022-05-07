@@ -9,7 +9,8 @@ import Checkout from "./pages/Checkout";
 import Success from "./pages/Success";
 // import { useSelector } from "react-redux";
 import axios from "axios";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+require('dotenv').config();
 
 const App = () => {
   const [user, setUser] = useState(null)
@@ -34,7 +35,8 @@ const App = () => {
       //   .catch((err) => {
       //     console.log(err);
       //   });
-      const res = await axios.get("https://pilgrim-wears.herokuapp.com/auth/login/success", { withCredentials: true });
+      // const res = await axios.get("https://pilgrim-wears.herokuapp.com/auth/login/success", { withCredentials: true });
+      const res = await axios.get(`https://pilgrim-wears.herokuapp.com/auth/login/success`, { withCredentials: true });
       console.log(res);
       // setUser(res.data.user)
     };
