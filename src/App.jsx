@@ -10,7 +10,6 @@ import Success from "./pages/Success";
 // import { useSelector } from "react-redux";
 import axios from "axios";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
-require('dotenv').config();
 
 const App = () => {
   const [user, setUser] = useState(null)
